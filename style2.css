@@ -1,0 +1,179 @@
+body{
+overflow: hidden;
+}
+
+.container{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    }
+    .yellow{
+        background-color: red;
+        height: 12vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .slider{
+        display: flex;
+        background-color: aquamarine;
+        width: 90%;
+        height: 100%;
+       position: relative;
+    
+    }
+
+    .pos1{
+        position: absolute;
+        left: 0%;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        /* display: inline-block; */
+        background-color: white;
+    }
+
+    .pos2{
+        position: absolute;
+        left: 110%;
+        height: 100%;
+        width: 100%;
+        display: none;
+        background-color: green;
+    }
+    .pos3{
+        position: absolute;
+        left: 110%;
+        height: 100%;
+        width: 100%;
+        display: none;
+        background-color: khaki;
+    }
+    .pos4{
+        position: absolute;
+        left: 110%;
+        height: 100%;
+        width: 100%;
+        display: none;
+        background-color: lavender;
+    }
+    .indicator{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .white{
+        background-color: white;
+    }
+    
+    .indicator span{
+        display: inline-block;
+        width: 15px;
+        
+        height: 15px;
+        border-radius: 50%;
+        margin-right: 5px;
+        background-color: grey
+    }
+    
+
+
+    .div{
+        /* display: flex; */
+        flex-direction: column;
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+    }
+    .inner-div{
+        background-color: rgb(162, 229, 229);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 85%;
+       
+    }
+    .para-div{
+        width: 85%;
+    }
+    
+    .know-more{
+        text-align: center;
+        margin-top: 10%;
+    }
+     a{
+        text-decoration: none;
+        color: blue;
+        font-size: 1rem;
+    }
+    p{
+        line-height: 1.4rem;
+        margin-bottom: 5%;
+        font-size: 0.8rem;
+    }
+    h1{
+        font-size: 2rem;
+        margin-top: -7%;
+        
+    }
+    .inner-div a{
+        margin-top: -5%;
+    }
+    
+    h1  i{
+        font-size: 1rem;
+        margin-right: -8%;
+    }
+
+    .heading h2{
+        font-size: 1.5rem;
+        margin-top: 10px;
+    }
+    /* some use fulll classes  */
+
+    /* .left{
+        left: -110%;
+        display: none;
+    } */
+
+    .current{
+        left: 0%;
+        /* display: block; */
+        display: flex;
+    }
+
+    .right{
+        left: 110%;
+        display: none;
+    }
+
+    @media only screen and (max-width: 238px) {
+        .heading h2{
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+
+        p{
+            line-height: 1.2rem;
+            margin-bottom: 5%;
+            font-size: 0.8rem;
+        }
+        .know-more{
+            text-align: center;
+            margin-top: 7%; 
+        }
+         a{
+            font-size: 0.7rem;
+        }
+        .container{
+            height: 90vh;
+        }
+
+
+      }
