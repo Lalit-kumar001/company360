@@ -4,18 +4,21 @@ overflow: hidden;
 
 .container{
     width: 100vw;
-    height: 80vh;
+    height: 85vh;
+    /* border: 2px solid red; */
     display: flex;
     justify-content: center;
     background-color: white;
+    position: relative;
     }
     .yellow{
         background-color: yellow;
-        height: 12vh;
+        height: 13vh;
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
+        /* position: relative; */
     }
     
     .slider{
@@ -33,6 +36,7 @@ overflow: hidden;
         height: 100%;
         width: 100%;
         display: flex;
+        /* border: 2px solid green; */
         /* display: inline-block; */
         background-color: white;
     }
