@@ -25,11 +25,16 @@ btn1.addEventListener('click',function(){
     pos3.classList.add('right');
     pos4.classList.add('right');
 
+    // btn color 
 
     btn1.classList.add('white');
+    btn1.classList.remove('grey');
     btn2.classList.remove('white');
     btn3.classList.remove('white');
     btn4.classList.remove('white');
+    btn2.classList.add('grey');
+    btn3.classList.add('grey');
+    btn4.classList.add('grey');
 
 })
 
@@ -53,9 +58,14 @@ btn2.addEventListener('click',function(){
 
     //btn color
     btn2.classList.add('white');
+    btn2.classList.remove('grey');
     btn1.classList.remove('white');
     btn3.classList.remove('white');
     btn4.classList.remove('white');
+    btn1.classList.add('grey');
+    btn3.classList.add('grey');
+    btn4.classList.add('grey');
+
 
 })
 
@@ -79,9 +89,14 @@ btn3.addEventListener('click',function(){
 
     //btn color
     btn3.classList.add('white');
+    btn3.classList.remove('grey');
     btn1.classList.remove('white');
     btn2.classList.remove('white');
     btn4.classList.remove('white');
+    btn1.classList.add('grey');
+    btn2.classList.add('grey');
+    btn4.classList.add('grey');
+
 
 
 })
@@ -106,9 +121,14 @@ btn4.addEventListener('click',function(){
     
     //btn color
     btn4.classList.add('white');
+    btn4.classList.remove('grey');
     btn1.classList.remove('white');
     btn3.classList.remove('white');
     btn2.classList.remove('white');
+    btn1.classList.add('grey');
+    btn3.classList.add('grey');
+    btn2.classList.add('grey');
+
 })
 
 
@@ -120,7 +140,7 @@ startY,
 distX,
 distY, 
 threshold=150,//required min distance traveled to be considered swipe
-allowedTime = 300, // maximum time allowed to travel that distance
+allowedTime = 250, // maximum time allowed to travel that distance
 elapsedTime,
 startTime
 
@@ -131,12 +151,33 @@ if (isrightswipe=='left'){
     pos1.classList.add('right');
     pos2.classList.remove('right');
     pos2.classList.add('current');
+
+    // btn color 
+    btn2.classList.add('white');
+    btn2.classList.remove('grey');
+    btn1.classList.remove('white');
+    btn3.classList.remove('white');
+    btn4.classList.remove('white');
+    btn1.classList.add('grey');
+    btn3.classList.add('grey');
+    btn4.classList.add('grey');
+
   }
   else if(pos2.classList.contains('current')){
     pos2.classList.remove('current');
     pos2.classList.add('right');
     pos3.classList.remove('right');
     pos3.classList.add('current');
+
+// btn color  
+btn3.classList.add('white');
+btn3.classList.remove('grey');
+btn1.classList.remove('white');
+btn2.classList.remove('white');
+btn4.classList.remove('white');
+btn1.classList.add('grey');
+btn2.classList.add('grey');
+btn4.classList.add('grey');
   }
 
  else  if(pos3.classList.contains('current')){
@@ -144,6 +185,17 @@ if (isrightswipe=='left'){
     pos3.classList.add('right');
     pos4.classList.remove('right');
     pos4.classList.add('current');
+
+    // btn color
+
+    btn4.classList.add('white');
+    btn4.classList.remove('grey');
+    btn1.classList.remove('white');
+    btn3.classList.remove('white');
+    btn2.classList.remove('white');
+    btn1.classList.add('grey');
+    btn3.classList.add('grey');
+    btn2.classList.add('grey');
   }
 }
 else if(isrightswipe=='right'){
@@ -152,12 +204,33 @@ else if(isrightswipe=='right'){
         pos4.classList.add('right');
         pos3.classList.remove('right');
         pos3.classList.add('current');
+
+        // btn color 
+        btn3.classList.add('white');
+btn3.classList.remove('grey');
+btn1.classList.remove('white');
+btn2.classList.remove('white');
+btn4.classList.remove('white');
+btn1.classList.add('grey');
+btn2.classList.add('grey');
+btn4.classList.add('grey');
+
     }
    else if(pos3.classList.contains('current')){
         pos3.classList.remove('current');
         pos3.classList.add('right');
         pos2.classList.remove('right');
         pos2.classList.add('current');
+
+        // btn color 
+        btn2.classList.add('white');
+        btn2.classList.remove('grey');
+        btn1.classList.remove('white');
+        btn3.classList.remove('white');
+        btn4.classList.remove('white');
+        btn1.classList.add('grey');
+        btn3.classList.add('grey');
+        btn4.classList.add('grey');
     }
 
     else if(pos2.classList.contains('current')){
@@ -165,6 +238,16 @@ else if(isrightswipe=='right'){
         pos2.classList.add('right');
         pos1.classList.remove('right');
         pos1.classList.add('current');
+
+        // btn color 
+        btn1.classList.add('white');
+        btn1.classList.remove('grey');
+        btn2.classList.remove('white');
+        btn3.classList.remove('white');
+        btn4.classList.remove('white');
+        btn2.classList.add('grey');
+        btn3.classList.add('grey');
+        btn4.classList.add('grey');
     }
 
 }
