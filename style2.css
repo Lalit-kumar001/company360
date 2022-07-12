@@ -10,7 +10,7 @@ overflow: hidden;
     background-color: white;
     }
     .yellow{
-        background-color: red;
+        background-color: yellow;
         height: 12vh;
         width: 100%;
         display: flex;
@@ -70,6 +70,10 @@ overflow: hidden;
     .white{
         background-color: white;
     }
+    .grey
+{
+    background-color: grey;
+}
     
     .indicator span{
         display: inline-block;
@@ -78,7 +82,7 @@ overflow: hidden;
         height: 15px;
         border-radius: 50%;
         margin-right: 5px;
-        background-color: grey
+       
     }
     
 
